@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.grid {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid--row {
+  display: flex;
+  width: 100%;
+  border-bottom: 15px solid black;
+}
+
+.grid--row:last-child {
+  border-bottom: 0;
+}
+
+.grid--cell {
+  height: 100%;
+  border-right: 12px solid black;
+}
+
+.grid--cell:last-child {
+  border-right: 0;
+}
+
+.grid--cell__white {
+  background-color: white;
+}
+
+.grid--cell__blue {
+  background-color: #4172b3;
+}
+
+.grid--cell__red {
+  background-color: #cf2d25;
+}
+
+.grid--cell__yellow {
+  background-color: #fadb3b;
+}
