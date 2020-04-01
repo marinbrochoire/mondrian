@@ -1,0 +1,17 @@
+{
+  "name": "mondrian",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/marinbrochoire/mondrian.git",
+  "author": "Marin Brochoire <marin.brochoire@outlook.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "elm-hot": "^1.0.1",
+    "node-elm-compiler": "^5.0.3",
+    "parcel-bundler": "^1.12.3"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  }
+}

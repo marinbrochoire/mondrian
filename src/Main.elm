@@ -111,14 +111,25 @@ viewRow row =
 
 cssPercentage : Float -> String
 cssPercentage float =
-    Debug.toString float ++ "%"
+    String.fromFloat float ++ "%"
 
 
 viewCell : Cell -> Html msg
 viewCell cell =
     let
         modifier =
-            String.toLower (Debug.toString cell.color)
+            case cell.color of
+                Blue ->
+                    "blue"
+
+                Red ->
+                    "red"
+
+                Yellow ->
+                    "yellow"
+
+                White ->
+                    "white"
     in
     div
         [ class "grid--cell"
